@@ -1,0 +1,13 @@
+
+
+.Footer{
+   background: #000;
+   margin-top: 20px;
+   height: 50px;
+}
+
+.Footer p {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}

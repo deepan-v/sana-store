@@ -1,0 +1,50 @@
+import React from 'react'
+import { useCustom } from '../../../ContextApi/ContextApi'
+import KidsProduct from './KidsProduct'
+import '../../Product/Product.css'
+import { Link } from 'react-router-dom'
+import { IoIosArrowRoundForward } from 'react-icons/io'
+
+const Index = () => {
+  let {Products  ,ForBasket} = useCustom()
+     let {ToAddCart} = ForBasket
+    let {KidDress} = Products
+  
+    return(
+        <div className='MainHead'>
+          {KidDress.map((states)=>{
+            let {id , img , PrevPrice ,CurrentPrice} = states
+               return (
+               <div className='TopKidContainer' key={id}>
+                     <div className='Deepan'>
+                     <img className='Images' src={img} alt="" />
+                     </div>
+               <div>
+             <div className='CartFooter'>
+              <div className='DiscountSection'>
+                 <div>
+                  <p className='Discount'>Up To 40% off</p>
+                 </div>
+              </div>
+                 <div className='PriceSection'>   
+                  <p className='Price'>Price :</p>
+                   <p className='Prices Prev' >₹{PrevPrice}</p>
+                   <p className='Prices Current'>₹{CurrentPrice}</p>
+                 </div>
+                <Link to='/ShoppingPage' onClick={()=>ToAddCart(id)} className='ShopLink'>
+                   <p>Shop Now</p>
+                   <p style={{fontSize:'25px',marginTop:'6px' }}><IoIosArrowRoundForward/> </p>
+                </Link>
+             </div>
+                </div>
+
+          </div>
+  )
+          })}
+          </div>
+    )
+
+ 
+}
+
+export default Index

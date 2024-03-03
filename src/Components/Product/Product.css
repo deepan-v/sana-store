@@ -1,0 +1,158 @@
+
+ .MainHead {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+ }
+
+ .KisWear{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ /* .Super{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+ } */
+
+
+ .Images {
+    border-radius: 4px 4px 0px 0px ;
+     width: 100%;
+
+     height: 100%;
+ }
+
+ .TopKidContainer {
+    border-radius: 5px;
+        max-width: 250px;
+        max-height: 40%;
+        /* border: 1px solid red; */
+        /* width: 18%; */
+        -webkit-box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 1px 10px -2px rgba(0, 0, 0, 0.75);
+
+ }
+
+
+ .Deepan {
+     width: 100%;
+     height: 70%;
+ }
+
+
+.Discount {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.DiscountSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.PriceSection {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  
+}
+
+.ShopLink{
+    text-decoration: none;
+    color: #1da1f2;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.Prices {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.Price {
+    color: gray;
+
+}
+
+.Prev {
+    text-decoration: line-through;
+    color: rgb(103, 102, 102);
+}
+
+.Current {
+    margin-left: 5px;
+}
+
+.CartFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.Wears{
+    margin-top: 50px;
+    position: relative;
+}
+
+.ProductTitle{
+   margin-bottom: 20px;
+   width: 200px;  
+}
+
+.ProductTitle::before{
+    content: '';
+    position: absolute;
+    top: 27px;
+    border-bottom: 2px solid black;
+    transition: all 500ms;
+    height: 2px;
+    width: 30px;
+}
+
+.ProductTitle:hover::before{
+   width:60px;
+}
+
+@media all and (max-width:600px) {
+    .MainHead {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+        }
+        .Images {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+           .TopKidContainer{
+            width: 46%;
+           }
+    
+        .Deepan {
+            width: 100%;
+            height: 60%;
+        }
+}
+
+@media all and (max-width:320px){
+    .TopKidContainer{
+        width: 45%;
+    }
+}

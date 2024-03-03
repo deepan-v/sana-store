@@ -1,0 +1,242 @@
+
+.CartPageContainer{
+    justify-content: center;
+    max-width: 600px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.InsideCart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.IconsForCart{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Green{
+    color: green;
+}
+
+.Red{
+    color: red;
+}
+
+.MainPageWrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+    align-items: center;
+
+}
+
+
+.ProductCartContainer{
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.CartProdImg{
+    border-radius: 5px 0px 0px 5px;
+    width:50% ;
+    height: 100%;
+ 
+}
+
+.Description{
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 10px;
+  }
+
+.ToCartManage{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.CartRight{
+   padding: 0px 7px;
+   width: 50%;
+}
+
+.ForCartInc{
+    display: flex;
+    align-items: center;
+    transform: scale(0.9);
+    /* height: 290px; */
+    max-width: 700px;
+    /* margin-bottom: 1px; */
+    -webkit-box-shadow: 1px 3px 9px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 3px 9px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 3px 9px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+
+.linkbgColor{
+    margin-top: 20px;
+    background: rgb(249, 161, 0);
+    padding: 10px 30px;
+    display: flex;
+    max-width: 388px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    /* background: orange; */
+}  
+
+.ProductPageNavigator{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;   
+}
+
+.TotalAmount{
+    display: flex;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    justify-content: center;
+    margin: 20px 0px;
+    gap: 20px;
+    -webkit-box-shadow: 1px 4px 12px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 1px 4px 12px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 4px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+.css-button-shadow-border-sliding--red {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    background: #d90429;
+    z-index: 1;
+}
+
+.css-button-shadow-border-sliding--red:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.css-button-shadow-border-sliding--red:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+    background-color: #ef233c;
+    right: 0;
+}
+
+.css-button-shadow-border-sliding--red:active {
+    top: 2px;
+}
+
+.ToFixed{
+  display: flex;
+  z-index: 3;
+  flex-direction: column;
+  position: sticky;
+  top: 30px;
+  
+}
+
+.CartEmpty{
+    display: flex;
+    gap: 10px;
+    font-size: 40px;
+    height: 60px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+
+.EmptyEmoji{
+    color: rgb(213, 153, 40);
+    margin-top: 10px;
+}
+
+.ProductPageNavigator:hover{
+    text-decoration:underline;
+}
+
+.css-button-shadow-border-sliding--black {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    background: #212529;
+    z-index: 1;
+}
+
+.css-button-shadow-border-sliding--black:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.css-button-shadow-border-sliding--black:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+    background-color: #343a40;
+    right: 0;
+}
+
+.css-button-shadow-border-sliding--black:active {
+    top: 2px;
+}
+
+@media all and (max-width:500px) {
+    .ForCartInc{
+
+        max-width: 300px;
+    }
+    .CartEmpty{
+        font-size: 30px;
+    }
+
+}

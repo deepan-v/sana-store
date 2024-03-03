@@ -1,0 +1,70 @@
+
+.ContactContainer{
+    width: 85%;
+}
+
+.ContactAlign{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.StoreName{
+   /* text-shadow: 3px 4px 6px rgba(0, 0, 0, 0.65); */
+   font-size: 50px;
+background: #FF750F;
+    background: linear-gradient(to right, #FF750F 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ContactContainer{
+    text-align: center;
+}
+
+.ContactWrapper{
+    margin: 50px 0px;
+}
+.ContactWrapper :nth-child(1){
+    margin-bottom: 20px;
+background: #FF750F;
+    background: linear-gradient(to right, #FF750F 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    font-size: 40px;
+
+}
+.ContactWrapper :nth-child(2){
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.Contact-Head{
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+
+@media all and (max-width:500px) {
+    
+    .StoreName {
+        font-size:27px;
+    }
+
+
+    .ContactWrapper :nth-child(1) {
+        font-size: 25px;
+
+    }
+
+    .ContactWrapper :nth-child(2) {
+        font-size: 15px;
+
+    }
+
+    .Contact-Head {
+        font-size: 15px;
+    }
+
+}
